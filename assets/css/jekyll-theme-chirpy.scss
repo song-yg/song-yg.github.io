@@ -32,8 +32,8 @@ pre, code, kbd, samp {
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 300px;
+  top: -50px;
+  left: 150px;
   width: 420px;
   height: 320px;
   background: linear-gradient(225deg, rgba(61,96,201,0.4) 0%, rgba(61,96,201,0) 70%);
