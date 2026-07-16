@@ -1,8 +1,14 @@
 ---
 ---
 
-@import 'jekyll-theme-chirpy';
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+.bundle
+{%- endif -%}
+';
 
+/* append your custom style below */
 #sidebar {
   border-radius: 12px;
   margin: 1rem;
