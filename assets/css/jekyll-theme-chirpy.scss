@@ -98,7 +98,7 @@ pre, code, kbd, samp {
 
 /* 주석 */
 .highlight .c, .highlight .c1, .highlight .cm {
-  color: #4FC1C0 !important;
+  color: #84BE78 !important;
   font-style: italic;
 }
 
@@ -107,40 +107,45 @@ pre, code, kbd, samp {
   color: #FF79C6 !important;
 }
 
-/* import, from, as */
+/* import, from, as -> 마젠타 */
 .highlight .kn {
-  color: #56B6C2 !important;
+  color: #FF79C6 !important;
 }
 
-/* 내장 함수/타입: print, len, list, dict, set, tuple, str, int, iter, next, range */
-.highlight .kt, .highlight .nb {
-  color: #4EC9B0 !important;
+/* 내장 함수/: print,  iter, next, range */
+.highlight .kt {
+  color: #DBE8BA !important;
 }
 
-/* 클래스명 */
+/* 타입 */
+.highlight .nb {
+  color: #49EACA !important;
+}
+
+/* 클래스명 -> 청록 */
 .highlight .nc {
-  color: #4EC9B0 !important;
+  color: #49EACA !important;
 }
 
 /* 함수명 (def 뒤에 오는 이름) */
 .highlight .nf {
-  color: #DCDCAA !important;
+  color: #DBE8BA !important;
 }
 
 /* 문자열 */
 .highlight .s, .highlight .s1, .highlight .s2, .highlight .sa, .highlight .se {
-  color: #CE9178 !important;
+  color: #A8F8FF !important;
 }
 
 /* 독스트링 ("""...""") */
 .highlight .sd {
-  color: #D4D4D4 !important;
+  color: #CA8F77 !important;
   font-style: italic;
 }
 
 /* 숫자 */
 .highlight .mi, .highlight .mf, .highlight .m {
-  color: #B5CEA8 !important;
+  color: #A8F8FF !important;
 }
 
 /* self, cls, None, True, False */
@@ -150,5 +155,5 @@ pre, code, kbd, samp {
 
 /* 연산자, 구두점 */
 .highlight .o, .highlight .p {
-  color: #D4D4D4 !important;
+  color: #ffffff !important;
 }
