@@ -34,13 +34,13 @@ body::before {
   position: fixed;
   top: 0;
   left: 300px;
-  width: 260px;
-  height: 260px;
+  width: 280px;
+  height: 220px;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
+  border-radius: 45% 55% 60% 40%;
   background: #3D60C9;
-  opacity: 0.45;
-  filter: blur(40px);
+  opacity: 0.4;
+  filter: blur(35px);
   z-index: -1;
   pointer-events: none;
 }
