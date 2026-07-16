@@ -44,11 +44,6 @@ pre, code, kbd, samp {
   pointer-events: none;
 }
 
-.toc-link.active,
-.toc-link:hover {
-  color: #3D60C9 !important;
-}
-
 .toc-link.active {
   border-left-color: #3D60C9 !important;
 }
@@ -58,20 +53,6 @@ pre, code, kbd, samp {
 #toc-wrapper .toc-link:hover {
   color: #3D60C9 !important;
   border-left-color: #3D60C9 !important;
-}
-
-/* 인기 태그 hover / 활성 상태 */
-.post-tag:hover,
-.post-tag.active {
-  background-color: #3D60C9 !important;
-  border-color: #3D60C9 !important;
-  color: #e5e5e5 !important;
-}
-
-/* 최근 업데이트 리스트 hover (글자색 + 밑줄색 둘 다) */
-#panel-wrapper a:hover {
-  color: #3D60C9 !important;
-  text-decoration-color: #3D60C9 !important;
 }
 
 /* PWA 업데이트 알림 팝업 버튼 */
@@ -86,4 +67,22 @@ pre, code, kbd, samp {
 .post-navigation .btn:hover {
   background-color: #3D60C9 !important;
   border-color: #3D60C9 !important;
+}
+
+:root[data-bs-theme=dark] {
+  --link-color: #3D60C9;
+  --link-underline-color: #3D60C9;
+  --toc-highlight: #3D60C9;
+  --tag-hover: rgba(61, 96, 201, 0.35);
+}
+
+/* 이전글/다음글 네비게이션 버튼 (부트스트랩 변수 방식) */
+.post-navigation .btn-outline-primary {
+  --bs-btn-color: #3D60C9;
+  --bs-btn-border-color: #3D60C9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3D60C9;
+  --bs-btn-hover-border-color: #3D60C9;
+  --bs-btn-active-bg: #3D60C9;
+  --bs-btn-active-border-color: #3D60C9;
 }
