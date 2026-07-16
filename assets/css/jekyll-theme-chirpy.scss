@@ -28,3 +28,19 @@ body {
 pre, code, kbd, samp {
   font-family: var(--bs-font-monospace);
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 300px;
+  width: 260px;
+  height: 260px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #3D60C9;
+  opacity: 0.45;
+  filter: blur(40px);
+  z-index: -1;
+  pointer-events: none;
+}
