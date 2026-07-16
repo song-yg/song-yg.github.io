@@ -70,7 +70,7 @@ pre, code, kbd, samp {
 .post-tag.active {
   background-color: #3D60C9 !important;
   border-color: #3D60C9 !important;
-  color: #fff !important;
+  color: var(--text-color) !important;
 }
 
 /* PWA 업데이트 알림 팝업 버튼 */
