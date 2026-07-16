@@ -43,3 +43,12 @@ pre, code, kbd, samp {
   filter: blur(55px);
   pointer-events: none;
 }
+
+.toc-link.active,
+.toc-link:hover {
+  color: #3D60C9 !important;
+}
+
+.toc-link.active {
+  border-left-color: #3D60C9 !important;
+}
