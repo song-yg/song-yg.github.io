@@ -86,3 +86,22 @@ pre, code, kbd, samp {
   --bs-btn-active-bg: #3D60C9;
   --bs-btn-active-border-color: #3D60C9;
 }
+
+.highlight {
+  background-color: #000000 !important;
+}
+
+.highlight .c, .highlight .c1, .highlight .cm { color: #6a9955; font-style: italic; } // 주석
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kr { color: #569cd6; }       // 키워드 (def, if, return, import)
+.highlight .kt { color: #4ec9b0; }                                                     // 타입 키워드
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sa { color: #ce9178; }       // 문자열
+.highlight .n, .highlight .nx { color: #ffffff; }                                       // 일반 변수명
+.highlight .nf { color: #dcdcaa; }                                                       // 함수명
+.highlight .nc { color: #4ec9b0; }                                                       // 클래스명
+.highlight .nb { color: #4ec9b0; }                                                       // 내장 함수
+.highlight .bp { color: #569cd6; }                                                       // self, None, True 등
+.highlight .mi, .highlight .mf, .highlight .m { color: #b5cea8; }                        // 숫자
+.highlight .o { color: #d4d4d4; }                                                         // 연산자
+.highlight .p { color: #d4d4d4; }                                                         // 구두점 (괄호 등)
+.highlight .sk, .highlight .ss { color: #ce9178; }                                        // f-string 관련
+.highlight .il { color: #9cdcfe; }                                                        // 인라인 삽입값
