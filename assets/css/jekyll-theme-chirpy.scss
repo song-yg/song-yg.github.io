@@ -52,3 +52,37 @@ pre, code, kbd, samp {
 .toc-link.active {
   border-left-color: #3D60C9 !important;
 }
+
+/* 목차 (TOC) 활성 항목 */
+#toc-wrapper .toc-link.active,
+#toc-wrapper .toc-link:hover {
+  color: #3D60C9 !important;
+  border-left-color: #3D60C9 !important;
+}
+
+/* 최근 업데이트 리스트 hover */
+#panel-wrapper a:hover {
+  color: #3D60C9 !important;
+}
+
+/* 인기 태그 hover / 활성 상태 */
+.post-tag:hover,
+.post-tag.active {
+  background-color: #3D60C9 !important;
+  border-color: #3D60C9 !important;
+  color: #fff !important;
+}
+
+/* PWA 업데이트 알림 팝업 버튼 */
+#pwa-toast .btn-primary,
+#notification {
+  background-color: #3D60C9 !important;
+  border-color: #3D60C9 !important;
+}
+
+/* 이전글/다음글 네비게이션 버튼 */
+.post-navigation a:hover,
+.post-navigation .btn:hover {
+  background-color: #3D60C9 !important;
+  border-color: #3D60C9 !important;
+}
