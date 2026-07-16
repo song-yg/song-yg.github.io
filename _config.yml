@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: "Dev Log" # the main title
 
-tagline: "이게 MZ가 될락말락한 사람입니다 # it will display as the subtitle
+tagline: "이게 MZ가 될락말락한 사람입니다" # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
