@@ -29,14 +29,16 @@ pre, code, kbd, samp {
   font-family: var(--bs-font-monospace);
 }
 
-body::before {
+#sidebar::before {
   content: "";
-  position: fixed;
-  top: -50px;
+  position: absolute;
+  bottom: -60px;
   right: -50px;
-  width: 350px;
-  height: 320px;
-  background: linear-gradient(225deg, rgba(61,96,201,0.4) 0%, rgba(61,96,201,0) 70%);
-  z-index: -1;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #3D60C9;
+  opacity: 0.45;
+  filter: blur(40px);
   pointer-events: none;
 }
