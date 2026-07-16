@@ -10,10 +10,10 @@
 
 /* append your custom style below */
 #sidebar {
-  position: fixed;
-  top: 1.2rem;
+  position: fixed !important;
+  top: 1.2rem !important;
   bottom: 1.2rem !important;
-  left: 1.2rem;
+  left: 1.2rem !important;
   border-radius: 50px;
   overflow: hidden;
   border: 2px solid #3D60C9;
