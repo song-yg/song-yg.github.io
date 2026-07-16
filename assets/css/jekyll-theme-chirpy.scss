@@ -87,22 +87,68 @@ pre, code, kbd, samp {
   --bs-btn-active-border-color: #3D60C9;
 }
 
-.highlight {
+.highlight, .highlight pre {
   background-color: #000000 !important;
 }
 
-.highlight .c, .highlight .c1, .highlight .cm { color: #4EC9C9; font-style: italic; } // 주석
+/* 안전장치: 위에서 못 잡은 요소는 전부 흰색 기본값 */
+.highlight, .highlight * {
+  color: #ffffff !important;
+}
 
-.highlight .k, .highlight .kd, .highlight .kn, .highlight .kr, .highlight .kc { color: #C586C0; } // def, if, for, import, from, as, try, return
+/* 주석 */
+.highlight .c, .highlight .c1, .highlight .cm {
+  color: #4FC1C0 !important;
+  font-style: italic;
+}
 
-.highlight .kt, .highlight .nb { color: #4EC9B0; } // dict, list, str, set, tuple 등 타입/내장함수
+/* 제어/구조 키워드: if, for, in, return, try, def, class, else, elif, not, and, or, with, raise, pass, break, continue */
+.highlight .k, .highlight .kr, .highlight .kc, .highlight .ow, .highlight .kd {
+  color: #FF79C6 !important;
+}
 
-.highlight .nf { color: #DCDCAA; } // 함수명
+/* import, from, as */
+.highlight .kn {
+  color: #56B6C2 !important;
+}
 
-.highlight .s, .highlight .s1, .highlight .s2, .highlight .sa { color: #CE9178; } // 일반 문자열
+/* 내장 함수/타입: print, len, list, dict, set, tuple, str, int, iter, next, range */
+.highlight .kt, .highlight .nb {
+  color: #4EC9B0 !important;
+}
 
-.highlight .sd { color: #D4D4D4; } // 독스트링 (""" ... """)
+/* 클래스명 */
+.highlight .nc {
+  color: #4EC9B0 !important;
+}
 
-.highlight .mi, .highlight .mf, .highlight .m { color: #B5CEA8; } // 숫자
+/* 함수명 (def 뒤에 오는 이름) */
+.highlight .nf {
+  color: #DCDCAA !important;
+}
 
-.highlight .n, .highlight .nx, .highlight .p, .highlight .o, .highlight .bp { color: #FFFFFF; } // 변수명, 구두점, 연산자
+/* 문자열 */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sa, .highlight .se {
+  color: #CE9178 !important;
+}
+
+/* 독스트링 ("""...""") */
+.highlight .sd {
+  color: #D4D4D4 !important;
+  font-style: italic;
+}
+
+/* 숫자 */
+.highlight .mi, .highlight .mf, .highlight .m {
+  color: #B5CEA8 !important;
+}
+
+/* self, cls, None, True, False */
+.highlight .bp {
+  color: #FF79C6 !important;
+}
+
+/* 연산자, 구두점 */
+.highlight .o, .highlight .p {
+  color: #D4D4D4 !important;
+}
