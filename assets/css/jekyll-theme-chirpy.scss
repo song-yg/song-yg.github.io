@@ -60,17 +60,18 @@ pre, code, kbd, samp {
   border-left-color: #3D60C9 !important;
 }
 
-/* 최근 업데이트 리스트 hover */
-#panel-wrapper a:hover {
-  color: #3D60C9 !important;
-}
-
 /* 인기 태그 hover / 활성 상태 */
 .post-tag:hover,
 .post-tag.active {
   background-color: #3D60C9 !important;
   border-color: #3D60C9 !important;
-  color: var(--text-color) !important;
+  color: #e5e5e5 !important;
+}
+
+/* 최근 업데이트 리스트 hover (글자색 + 밑줄색 둘 다) */
+#panel-wrapper a:hover {
+  color: #3D60C9 !important;
+  text-decoration-color: #3D60C9 !important;
 }
 
 /* PWA 업데이트 알림 팝업 버튼 */
