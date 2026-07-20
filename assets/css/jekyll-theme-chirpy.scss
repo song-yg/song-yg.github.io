@@ -9,14 +9,46 @@
 ';
 
 /* append your custom style below */
-#sidebar {
-  position: fixed !important;
-  top: 1.2rem !important;
-  height: calc(100vh - 2.4rem) !important;
-  left: 1.2rem !important;
-  border-radius: 50px;
-  overflow: hidden;
-  border: 2px solid #3D60C9;
+/* PC 화면에서만 사이드바 pill 스타일 적용 (모바일은 Chirpy 기본 햄버거 방식 유지) */
+@media (min-width: 1200px) {
+  #sidebar {
+    position: fixed !important;
+    top: 1.2rem !important;
+    height: calc(100vh - 2.4rem) !important;
+    left: 1.2rem !important;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 2px solid #3D60C9;
+  }
+
+  #sidebar::before {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #3D60C9;
+    opacity: 0.45;
+    filter: blur(55px);
+    pointer-events: none;
+  }
+}
+
+/* 모바일/태블릿(1200px 미만)에서는 커스텀 효과 확실히 제거 */
+@media (max-width: 1199.98px) {
+  #sidebar {
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+  }
+
+  #sidebar::before {
+    content: none !important;
+    display: none !important;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500&display=swap');
@@ -27,21 +59,6 @@ body {
 
 pre, code, kbd, samp {
   font-family: var(--bs-font-monospace);
-}
-
-#sidebar::before {
-  content: "";
-  position: absolute;
-  bottom: -80px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: #3D60C9;
-  opacity: 0.45;
-  filter: blur(55px);
-  pointer-events: none;
 }
 
 .toc-link.active {
