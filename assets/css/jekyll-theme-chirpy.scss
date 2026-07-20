@@ -164,12 +164,16 @@ pre, code, kbd, samp {
 }
 
 /* ===== 프로필 아바타 hover 글로우 ===== */
+#sidebar #avatar,
 #sidebar #avatar img {
-  transition: transform .5s, box-shadow 0.3s ease !important;
+  transition: transform .5s, border-color 0.3s ease, box-shadow 0.3s ease !important;
   border-radius: 50%;
 }
 
+#sidebar #avatar:hover,
+#sidebar #avatar:hover img,
 #sidebar #avatar img:hover {
+  border-color: #3D60C9 !important;
   box-shadow: 0 0 20px 6px rgba(61, 96, 201, 0.6) !important;
 }
 
