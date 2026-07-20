@@ -117,6 +117,25 @@ pre, code, kbd, samp {
   color: #3D60C9 !important;
 }
 
+/* ===== 인기 태그 hover 색상 ===== */
+.post-tag.btn-outline-primary,
+#panel-wrapper .post-tag {
+  --bs-btn-color: #3D60C9;
+  --bs-btn-border-color: #3D60C9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3D60C9;
+  --bs-btn-hover-border-color: #3D60C9;
+  --bs-btn-active-bg: #3D60C9;
+  --bs-btn-active-border-color: #3D60C9;
+}
+
+/* 위 변수 오버라이드가 안 먹는 경우를 위한 안전장치 */
+.post-tag:hover {
+  background-color: #3D60C9 !important;
+  border-color: #3D60C9 !important;
+  color: #fff !important;
+}
+
 /* ===== 최근 업데이트 위젯 링크 hover 색상 ===== */
 #access-lastmod a:hover {
   color: #3D60C9 !important;
