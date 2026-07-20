@@ -117,6 +117,12 @@ pre, code, kbd, samp {
   color: #3D60C9 !important;
 }
 
+/* ===== 최근 업데이트 위젯 링크 hover 색상 ===== */
+#access-lastmod a:hover {
+  color: #3D60C9 !important;
+  text-decoration-color: #3D60C9 !important;
+}
+
 /* ===== 검색창 focus 글로우 ===== */
 #search-input:focus {
   border-color: #3D60C9 !important;
