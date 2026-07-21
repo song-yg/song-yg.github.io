@@ -309,3 +309,8 @@ pre, code, kbd, samp {
 .highlight .o, .highlight .p {
   color: #ffffff !important;
 }
+
+/* 이미지 가운데 정렬 강제 (normal 클래스 flex 정렬 버그 보정) */
+a.img-link.normal {
+  justify-content: center !important;
+}
