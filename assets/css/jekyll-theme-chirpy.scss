@@ -223,6 +223,34 @@ pre, code, kbd, samp {
   }
 }
 
+/* ===== 포스트 상단 중앙 반원 그라데이션 (사이드바와 동일 형태) ===== */
+article.px-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+article.px-1::before {
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #3D60C9;
+  opacity: 0.45;
+  filter: blur(55px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 실제 본문(breadcrumb/제목/메타/내용)이 그라데이션 위로 오도록 z-index 확보 */
+article.px-1 > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* ===== 프로필 아바타 hover 글로우 ===== */
 #sidebar #avatar,
 #sidebar #avatar img {
