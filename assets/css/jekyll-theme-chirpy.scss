@@ -278,13 +278,13 @@ article.px-1 > * {
 
 /* 주석 */
 .highlight .c, .highlight .c1, .highlight .cm {
-  color: #4682B4 !important;
+  color: #37A697 !important;
   font-style: italic;
 }
 
 /* 제어/구조 키워드: if, for, in, return, try, def, class, else, elif, not, and, or, with, raise, pass, break, continue */
 .highlight .k, .highlight .kr, .highlight .kc, .highlight .ow, .highlight .kd {
-  color: #00F0FF !important;
+  color: #47A1C2 !important;
 }
 
 /* import, from, as -> 마젠타 */
@@ -299,12 +299,12 @@ article.px-1 > * {
 
 /* 타입 */
 .highlight .nb {
-  color: #2D68C4 !important;
+  color: #5E7DC9 !important;
 }
 
 /* 클래스명 */
 .highlight .nc {
-  color: #2D68C4 !important;
+  color: #5E7DC9 !important;
 }
 
 /* 함수명 */
@@ -314,7 +314,7 @@ article.px-1 > * {
 
 /* 문자열 */
 .highlight .s, .highlight .s1, .highlight .s2, .highlight .sa, .highlight .se {
-  color: #A8F8FF !important;
+  color: #3D7EB7 !important;
 }
 
 /* 독스트링 ("""...""") */
@@ -330,7 +330,7 @@ article.px-1 > * {
 
 /* self, cls, None, True, False */
 .highlight .bp {
-  color: #0F52BA !important;
+  color: #3D7EB7 !important;
 }
 
 /* 연산자, 구두점 */
