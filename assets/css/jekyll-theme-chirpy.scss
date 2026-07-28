@@ -85,6 +85,11 @@ pre, code, kbd, samp {
   border-color: #3D60C9 !important;
 }
 
+/* 포스트 카드(.post-preview)에 z-index를 준 뒤로 토스트가 카드 밑에 깔리는 문제 방지 */
+#pwa-toast {
+  z-index: 9999 !important;
+}
+
 /* 이전글/다음글 네비게이션 버튼 */
 @media (hover: hover) {
   .post-navigation a:hover,
